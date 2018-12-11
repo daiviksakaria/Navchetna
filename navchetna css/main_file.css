@@ -7,13 +7,7 @@
     color: #212529;
     background-color: #f7f7f7;
 }
-.secondbar{
-    height:50px;
-    position:sticky;
-    top:100px;
-    background-color: #212529;
 
-}
 .navbar {
     display: -ms-flexbox;
     display: flex;
@@ -28,6 +22,7 @@
 #para
 {
     border-radius:30px;
+    margin-bottom:-30px;
 }
 /*
 headeer top

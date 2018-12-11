@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>MODERN LOGO</title>
+    <link href="StyleSheet.css" rel="stylesheet" />
+
+    <script src="JavaScript.js"></script>
+    <script src="JavaScript2.js"></script>
+	<meta charset="utf-8" />
+
+</head>
+<body>
+    <div class="header">
+        <img src="images/logo.jpg" class="companylogo" />
+        <div class="companyname">MODERN LOGO</div>
+        <img src="images/logo.jpg" class="companylogo1" />
+    </div>
+<div class="slideshow-container">
+    
+    <div class="mySlides fade">
+        <img src="images/architectureimg.com-bridges-bridge-night-view-beautiful-cool-hdr-wallpaper.jpg" width="100%"height="450px" />
+    </div>
+    <div class="mySlides fade">
+        <img src="images/download.jpg" width="100%" height="450px"/>
+    </div>
+    <div class="mySlides fade">
+        <img src="images/landscape-of-city-center-with-many-buildings_1127-2071.jpg"width="100%"height="450px"  />
+    </div>
+    <div class="mySlides fade">
+        <img src="images/wallpaper-8b01b.jpg" width="100%"height="450px" />
+    </div>
+    <a class="prev" onclick="plusSlides(1)"> &#10094; </a>
+    <a class="next" onclick="plusSlides(-1)">&#10095; </a>
+</div>
+    <script>
+        var slide_index = 1;
+        changeSlide(slide_index)
+
+        function plusSlides(n)
+        {
+            slide_index += n;
+            changeSlide(slide_index);
+
+        }
+       function changeSlide(n)
+        {
+            var slides = document.getElementsByClassName("mySlides");
+
+            var i = 0;
+            if(n>slides.length)
+                slide_index = 1
+            if (n < 1) {
+                slide_index = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slide_index - 1].style.display = "block";
+       }
+
+    </script>
+
+
+
+
+<div class="image">
+    <img src="images/landscape-of-city-center-with-many-buildings_1127-2071.jpg" width="25%" height="200px" id="myBtn">
+    <img src="images/download.jpg"  width="25%" height="200px" id="myImg2"/>
+    <img src="images/download (1).jpg" width="24.2%" height="200px" id="myImg3"/>
+    <img src="images/architectureimg.com-bridges-bridge-night-view-beautiful-cool-hdr-wallpaper.jpg" width="25%" height="200px" id="myImg4" />
+    
+</div>
+
+
+    <div id="myModal" class="modal">
+
+        <div class="close">&times;</div>
+  
+        <div class="modal-content">
+            <img src="images/landscape-of-city-center-with-many-buildings_1127-2071.jpg" width="100%" height="200px" >
+                
+        </div>
+
+    </div>
+    <div id="modal1234">
+        <div class="insidemodal">
+            <div class="close1">&times;</div>
+            <img src="images/download.jpg" width="25%" height="200px" id="myImg2" />
+        </div>
+    </div>
+    <script>
+        var partner = document.getElementById("modal1234");
+        var button = document.getElementById('myImg2');
+        var close = document.getElementsByClassName("close1")[0];
+        button.onclick=function()
+        {
+            partner.style.display = "block";
+        }
+        close.onclick=function()
+        {
+            partner.style.display = "none";
+        }
+
+    </script>
+    <script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+    </script>
+    <div class="anotherslider">
+        <div class="sliderimages" style="float:left;">
+            <img src="images/wallpaper-8b01b.jpg" width="100%" height="500px" style="margin-top:50px;"  />
+
+        </div>
+        <div class="sliderimages" style="float:left;">
+            <img src="images/modern_architecture-t2.jpg";" />
+        </div>
+        <div class="sliderimages" >
+            <img src="images/architectureimg.com-bridges-bridge-night-view-beautiful-cool-hdr-wallpaper.jpg" />
+        </div>
+        <div class="sliderimages" style="float:left;">
+
+            <img src="images/download.jpg"  width="500px" style="margin-top:-100%;"/>
+        </div>
+    </div>
+    <div class="header">
+        <div class="progress-container" style="position:fixed;top:0px;border-radius:15px;">
+            <div class="progress-bar" id="myBar" style="position:sticky; top:0px;border-radius:15px;"></div>
+        </div>
+    </div>
+
+    <div class="content">
+        <h3>Scroll Down to See The Effect</h3>
+        <p>We have created a "progress bar" to <b>show how far a page has been scrolled</b>.</p>
+        <p>It also <b>works when you scroll back up</b>.</p>
+        <p>It is even <b>responsive</b>! Resize the browser window to see the effect.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    </div>
+
+    <script>
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+    </script>
+
+</body>
+</html>
